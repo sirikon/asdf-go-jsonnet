@@ -7,6 +7,16 @@ go-jsonnet is a feature-complete implementation of Jsonnet in pure Go which has
 some extra features that can't be trivially baked into Jsonnet's original
 implementation in C++.
 
+## Requirements
+
+This plugin is written in **bash**, so, apart from the commands you might expect
+in a common GNU/Linux installation (`cd`, `cp`, `rm`, `mkdir`...) it requires:
+
+- bash
+- curl
+- tar
+- jq
+
 ## Installation
 
 ```bash
