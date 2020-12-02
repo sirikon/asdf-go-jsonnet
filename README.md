@@ -3,6 +3,9 @@
 This asdf plugin downloads pre-compiled binaries from
 [go-jsonnet](https://github.com/google/go-jsonnet)'s releases section.
 
+If you are looking for a plugin that builds go-jsonnet from sources, check
+[Craig's plugin](https://gitlab.com/craigfurman/asdf-go-jsonnet) instead.
+
 go-jsonnet is a feature-complete implementation of Jsonnet in pure Go which has
 some extra features that can't be trivially baked into Jsonnet's original
 implementation in C++.
