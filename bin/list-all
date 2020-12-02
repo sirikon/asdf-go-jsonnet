@@ -4,4 +4,5 @@ set -euo pipefail
 curl --silent "https://api.github.com/repos/google/go-jsonnet/releases" \
     | jq -r '.[].tag_name' \
     | cut -c 2- \
+    | tac \
     | tr '\n' ' '

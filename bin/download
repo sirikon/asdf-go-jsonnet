@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+curl -L# "https://github.com/google/go-jsonnet/releases/download/v${ASDF_INSTALL_VERSION}/go-jsonnet_${ASDF_INSTALL_VERSION}_Linux_$(uname -m).tar.gz" \
+    --output "${ASDF_DOWNLOAD_PATH}/archive.tar.gz"
+
+(
+    cd "${ASDF_DOWNLOAD_PATH}"
+    tar -xzf "archive.tar.gz"
+    rm "archive.tar.gz"
+)

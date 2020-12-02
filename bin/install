@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+mkdir -p "${ASDF_INSTALL_PATH}/bin"
+cp "${ASDF_DOWNLOAD_PATH}/jsonnet" "${ASDF_INSTALL_PATH}/bin/jsonnet"
+cp "${ASDF_DOWNLOAD_PATH}/jsonnetfmt" "${ASDF_INSTALL_PATH}/bin/jsonnetfmt"
